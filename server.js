@@ -68,7 +68,11 @@ app.get('/kreditBeantragen', (req, res) => {
 });
 
 app.get('/ueberweisungAusfuehren', (req, res) => {
-	res.render('ueberweisungAusfuehren.ejs',{});
+	res.render('ueberweisungAusfuehren.ejs',{
+		Betrag: 100
+	
+		
+	});
 });
 
 app.get('/geldAnlegen', (req, res) => {
